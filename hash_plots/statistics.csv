@@ -1,0 +1,10 @@
+hash_name,avg_collisions,mid_collisions,peak_collisions,cumulative_collisions
+BKDR,0.0,0.0,0,0
+JS,0.0,0.0,0,0
+DEK,0.0234375,0.0,1,15
+SDBM,0.04375,0.0,1,28
+RS,0.0546875,0.0,1,35
+DJB,0.121875,0.0,1,78
+BP,0.1390625,0.0,2,89
+ELF,0.209375,0.0,2,134
+PJW,0.209375,0.0,2,134
