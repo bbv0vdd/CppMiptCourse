@@ -5,6 +5,22 @@
 #include <queue>
 #include <stack>
 
+
+/*
+ * TYPE is meaningless — type of what?
+ * UPPERCASE enum names are typically for constants, not enum types
+ * Should be enum class Side or enum class Direction
+ */
+ 
+/*
+ * maybe:
+	enum class Side
+	{
+		Left,
+		Right
+	};
+*/
+
 enum TYPE
 {
     LEFT,
@@ -148,7 +164,7 @@ static void run_tests()
     Tree tree = make_demo_tree();
 
     assert(tree.m_root);
-    assert(tree.m_root->m_value == 1);
+    assert(tree.m_root->m_value == 1); // why are you setting vlues again, are they not set already in make_demo_tree()?
 
     assert(tree.m_root->m_left);
     assert(tree.m_root->m_left->m_value == 2);
@@ -198,3 +214,6 @@ int main()
 
     std::cout << "done\n";
 }
+
+
+// score is 7/10

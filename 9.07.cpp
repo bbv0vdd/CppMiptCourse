@@ -67,3 +67,10 @@ int main()
     assert(v3_1.use_count() == 2);
     assert(v3_2.use_count() == 2);
 }
+
+// score is 3/10
+// A lot is missing
+// "Реализуйте в классе Entity константную и неконстантнуюпубличные функции-члены get для получения отмытого указателя на экземпляр класса Implementation. Используйте стандартные функции std::bit_cast и std::launder в обеих функциях-членах get класса Entit"
+
+// If you really want, you can resubmit and we can increase score upto 8/10
+

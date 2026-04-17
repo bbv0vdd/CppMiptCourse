@@ -38,7 +38,7 @@ namespace
         Transform m_method;
     };
 
-    struct ExperimentSettings
+    struct ExperimentSettings // why not namespace? if these are just constants why passing them around as const references, why not use them as global variables in namespace?
     {
         std::size_t m_poolSize = POOL_SIZE;
         std::size_t m_step = INCREMENT;
@@ -57,7 +57,7 @@ namespace
         {
         }
 
-        [[nodiscard]] std::string generate()
+        [[nodiscard]] std::string generate() // why are you using own generator: https://github.com/i-s-m-mipt/Education/blob/master/projects/examples/source/10.42.cpp 
         {
             static constexpr char symbols[] =
                 "0123456789"
@@ -417,3 +417,12 @@ int main()
 
     return 1;
 }
+
+
+/*
+ * Score is 4/10
+ * 1. your graph is very coarse, you need more points on the x-axis and show some kind of monotonic increase in the number of collisions
+ * 2. just use generator from template https://github.com/i-s-m-mipt/Education/blob/master/projects/examples/source/10.42.cpp
+ * 3. need justification, discussion and conclusion of the plot 
+ * 10.05 "Обоснуйте форму полученных зависимостей. Определите лучшие и худшие хэш-функции данного набора"
+ */
