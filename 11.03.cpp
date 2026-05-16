@@ -141,3 +141,5 @@ int main()
         assert(std::ranges::is_sorted(v, lambda));
     }
 }
+
+// score is 9/10
