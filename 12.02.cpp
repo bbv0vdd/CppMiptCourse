@@ -239,3 +239,6 @@ int main()
     Quine::Printer printer(Code::SOURCE, Code::MARKER);
     printer.print();
 }
+
+// Source code and output do not match 
+// "g++ -std=c++23 -Wall -Wextra -Wpedantic 12.02.cpp -o 12.02.out\n" is not in the code
